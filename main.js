@@ -37,7 +37,6 @@ function showApplicantDetails() {
   axios
     .get(`https://jsonplaceholder.typicode.com/users/${applicantId}`)
     .then((response) => {
-      console.log(response);
       let details = response.data;
 
       $(".applicant-details").html(`
